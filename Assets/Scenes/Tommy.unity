@@ -156,7 +156,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ebcb50cc8bb37e4a8fa525a2ee3d3d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  paddleTypeSelection: 0
+  paddleTypeSelection: 1
   paddleSpeed: 500
 --- !u!233 &121019318
 HingeJoint2D:
@@ -173,15 +173,15 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: -0.000000069079135, y: 0.4999999}
-  m_ConnectedAnchor: {x: 0.11550756, y: -0.021579226}
+  m_ConnectedAnchor: {x: 0.11550783, y: -0.021579137}
   m_UseMotor: 1
   m_Motor:
     m_MotorSpeed: 0
     m_MaximumMotorForce: 10000
   m_UseLimits: 1
   m_AngleLimits:
-    m_LowerAngle: -60
-    m_UpperAngle: 0
+    m_LowerAngle: 0
+    m_UpperAngle: 40
 --- !u!61 &121019319
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -289,7 +289,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 121019316}
   m_LocalRotation: {x: -0, y: -0, z: -0.4835801, w: 0.8753001}
-  m_LocalPosition: {x: 1.5456704, y: -1.3758653, z: 0}
+  m_LocalPosition: {x: 1.6238927, y: -1.941834, z: 0}
   m_LocalScale: {x: 0.3832675, y: 2.4442, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -851,7 +851,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1049039614}
   m_LocalRotation: {x: -0, y: -0, z: -0.80819017, w: 0.5889217}
-  m_LocalPosition: {x: 2.5917778, y: -0.7040314, z: 0}
+  m_LocalPosition: {x: 2.67, y: -1.27, z: 0}
   m_LocalScale: {x: 0.2062, y: 0.2062, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
