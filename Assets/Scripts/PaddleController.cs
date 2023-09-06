@@ -28,19 +28,25 @@ public class PaddleController : MonoBehaviour
     void Update()
     {
         // Control paddle movement
-        float input = Input.GetAxis("Horizontal") ; // Use horizontal input axis (e.g., A/D or Left/Right arrow keys).
-        if(input < 0 && paddleTypeSelection == PaddleType.left) {
-            motor.motorSpeed = input * paddleSpeed;
-        } else if(input > 0 && paddleTypeSelection == PaddleType.right) {
-            motor.motorSpeed = input * paddleSpeed;
-        } else {
-            if(paddleTypeSelection == PaddleType.left) {
+        if(paddleTypeSelection == PaddleType.left) {
+            if(Input.GetButton("Left")) {
+                motor.motorSpeed = -paddleSpeed;
+                hingeJoint.motor = motor;
+            } else {
                 motor.motorSpeed = paddleSpeed;
+                hingeJoint.motor = motor;
+                motor.motorSpeed = 0;
+            }
+        } else {
+            if(Input.GetButton("Right")) {
+                motor.motorSpeed = paddleSpeed;
+                hingeJoint.motor = motor;
             } else {
                 motor.motorSpeed = -paddleSpeed;
+                hingeJoint.motor = motor;
+                motor.motorSpeed = 0;
             }
         }
-        hingeJoint.motor = motor;
     }
 }
 
