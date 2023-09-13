@@ -672,7 +672,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8220797752786685789, guid: b7088503d18dd5c4482c0677ac712866, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.5
+      value: 1.7
       objectReference: {fileID: 0}
     - target: {fileID: 8220797752786685789, guid: b7088503d18dd5c4482c0677ac712866, type: 3}
       propertyPath: m_LocalPosition.y
@@ -809,7 +809,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4486178951994799412, guid: ef5f67954a7067d4f8e272629b7f1c22, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.5
+      value: -1.7
       objectReference: {fileID: 0}
     - target: {fileID: 4486178951994799412, guid: ef5f67954a7067d4f8e272629b7f1c22, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1823,10 +1823,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lives: 0
   grape: {fileID: 5765663925914770676, guid: b8c5b2adcad6f9442b325a5d6b410e19, type: 3}
-  startLives: 0
-  bombTimer: 0
-  cherryBomb: {fileID: 0}
-  spawnTime: 100
+  startLives: 3
+  bombTimer: 20
+  cherryBomb: {fileID: 5933148619801698731, guid: 5b334c1f7f3a67b40abbf3c8cdf8a9a9, type: 3}
+  spawnTime: 50
 --- !u!4 &1903517444
 Transform:
   m_ObjectHideFlags: 0

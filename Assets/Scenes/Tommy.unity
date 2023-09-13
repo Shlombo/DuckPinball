@@ -239,8 +239,8 @@ MonoBehaviour:
   lives: 0
   grape: {fileID: 5765663925914770676, guid: b8c5b2adcad6f9442b325a5d6b410e19, type: 3}
   startLives: 0
-  bombTimer: 0
-  cherryBomb: {fileID: 1164717102}
+  bombTimer: 20
+  cherryBomb: {fileID: 5933148619801698731, guid: 5b334c1f7f3a67b40abbf3c8cdf8a9a9, type: 3}
   spawnTime: 100
 --- !u!4 &925364447
 Transform:
@@ -257,11 +257,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1164717102 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5933148619801698731, guid: 5b334c1f7f3a67b40abbf3c8cdf8a9a9, type: 3}
-  m_PrefabInstance: {fileID: 5933148620953816453}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1235321592
 GameObject:
   m_ObjectHideFlags: 0
@@ -610,11 +605,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5933148619801698742, guid: 5b334c1f7f3a67b40abbf3c8cdf8a9a9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.01
+      value: 15.61
       objectReference: {fileID: 0}
     - target: {fileID: 5933148619801698742, guid: 5b334c1f7f3a67b40abbf3c8cdf8a9a9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.68
+      value: -4.55
       objectReference: {fileID: 0}
     - target: {fileID: 5933148619801698742, guid: 5b334c1f7f3a67b40abbf3c8cdf8a9a9, type: 3}
       propertyPath: m_LocalPosition.z

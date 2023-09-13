@@ -7,18 +7,15 @@ public class CherryBomb : MonoBehaviour
     float startTime;
 
     
-    GameManager gameManager;
-    
     void Awake() 
     {
         startTime = Time.time;
-        gameManager = GameManager.Instance;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if((Time.time - startTime) > gameManager.bombTimer) {
+        if((Time.time - startTime) > GameManager.Instance.bombTimer) {
             BlowUp();
         }
     }
@@ -31,7 +28,7 @@ public class CherryBomb : MonoBehaviour
     }
 
     void BlowUp() {
-        gameManager.lives -= 1;
+        GameManager.Instance.lives -= 1;
         Destroy(this.gameObject);
     }
 }

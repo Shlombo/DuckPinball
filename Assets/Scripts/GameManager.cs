@@ -42,7 +42,7 @@ public class GameManager : MonoBehaviour
         spawnCounter = spawnCounter % spawnTime;
         if(spawnCounter == 0) {
             GameObject newGrape = Instantiate(grape);
-            newGrape.transform.SetPositionAndRotation(new Vector3(Random.Range(-2.0f,2.0f), 5.0f, 0.0f), new Quaternion(0.0f, 0.0f, 0.0f, 0.0f));
+            newGrape.transform.SetPositionAndRotation(new Vector3(Random.Range(-2.0f,2.0f), 20.0f, 0.0f), new Quaternion(0.0f, 0.0f, 0.0f, 0.0f));
         }
     }
 
