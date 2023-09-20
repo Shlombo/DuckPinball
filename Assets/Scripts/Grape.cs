@@ -18,6 +18,9 @@ public class Grape : MonoBehaviour
         if(collision.gameObject.tag == "Deadzone") {
             GameManager.Instance.SpawnBomb();
             Destroy(this.gameObject);
+        } else if(collision.gameObject.tag == "Grapezone") {
+            GameManager.Instance.AddScore(points);
+            Destroy(this.gameObject);
         }
     }
 

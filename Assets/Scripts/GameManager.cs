@@ -7,6 +7,8 @@ public class GameManager : MonoBehaviour
     
     public static GameManager Instance { get; private set; }
     public int lives;
+
+    public int score;
     public GameObject grape;
 
     public int startLives;
@@ -22,6 +24,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         lives = startLives;
+        score = 0;
     }
 
     void Awake() {
@@ -54,6 +57,10 @@ public class GameManager : MonoBehaviour
     public void SpawnBomb() {
         GameObject newBomb = Instantiate(cherryBomb);
         newBomb.transform.SetPositionAndRotation(new Vector3(Random.Range(-2.0f,2.0f), 5.0f, 0.0f), new Quaternion(0.0f, 0.0f, 0.0f, 0.0f));
+    }
+
+    public void AddScore(int points) {
+        score += points;
     }
 
 
