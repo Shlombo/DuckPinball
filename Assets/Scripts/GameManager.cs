@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get; private set; }
     public int lives;
 
-    public int score;
+    public static int score;
     public GameObject grape;
 
     public int startLives;
