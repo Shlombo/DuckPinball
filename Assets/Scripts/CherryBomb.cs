@@ -5,6 +5,7 @@ using UnityEngine;
 public class CherryBomb : MonoBehaviour
 {
     float startTime;
+    int points;
 
     
     void Awake() 
@@ -23,6 +24,11 @@ public class CherryBomb : MonoBehaviour
     void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.gameObject.tag == "Deadzone") {
+            Destroy(this.gameObject);
+        } else if(collision.gameObject.tag == "Grapezone") {
+            GameManager.Instance.AddScore(-points);
+            Destroy(this.gameObject);
+        } else if(collision.gameObject.tag == "Bombzone") {
             Destroy(this.gameObject);
         }
     }

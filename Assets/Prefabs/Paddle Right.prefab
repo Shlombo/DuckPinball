@@ -257,7 +257,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: -0.000000069079135, y: 0.4999999}
-  m_ConnectedAnchor: {x: -1.4027566, y: 1.1329261}
+  m_ConnectedAnchor: {x: -1.4027555, y: 1.1329235}
   m_UseMotor: 1
   m_Motor:
     m_MotorSpeed: 0
@@ -279,4 +279,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paddleTypeSelection: 1
-  paddleSpeed: 500
+  paddleSpeed: 1000

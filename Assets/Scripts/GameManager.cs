@@ -1,10 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     
+    public Text scoreText;
     public static GameManager Instance { get; private set; }
     public int lives;
 
@@ -51,12 +54,15 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        
+        if(lives <= 0) {
+            scoreText.text = "Score " + score.ToString();
+            SceneManager.LoadScene("Game Over");
+        }
     }
 
     public void SpawnBomb() {
         GameObject newBomb = Instantiate(cherryBomb);
-        newBomb.transform.SetPositionAndRotation(new Vector3(Random.Range(-2.0f,2.0f), 5.0f, 0.0f), new Quaternion(0.0f, 0.0f, 0.0f, 0.0f));
+        newBomb.transform.SetPositionAndRotation(new Vector3(Random.Range(-2.0f,2.0f), 20.0f, 0.0f), new Quaternion(0.0f, 0.0f, 0.0f, 0.0f));
     }
 
     public void AddScore(int points) {
