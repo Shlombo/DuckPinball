@@ -3,11 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
     
-    public Text scoreText;
+    public TMP_Text scoreText;
+
+    public TMP_Text livesText;
     public static GameManager Instance { get; private set; }
     public int lives;
 
@@ -54,8 +57,9 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
+        scoreText.text = "Score " + score.ToString();
+        livesText.text = "Lives " + lives.ToString();
         if(lives <= 0) {
-            scoreText.text = "Score " + score.ToString();
             SceneManager.LoadScene("Game Over");
         }
     }
