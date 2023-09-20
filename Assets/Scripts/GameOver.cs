@@ -18,6 +18,7 @@ public class GameOver : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+       score = GameManager.score;
        scoreText.text = "Final Score: " + score.ToString(); 
     }
 }
